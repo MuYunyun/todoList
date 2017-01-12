@@ -1,8 +1,8 @@
 # todoList
-<a href="http://MuYunyun.github.io/todoList" target="_blank">效果展示</a>
+<a href="http://MuYunyun.github.io/todoList" target="\_blank">效果展示</a>
 
-		$ git clone https://github.com/xxxgitone/react-redux-todos.git
-		cd react-redux-todos
+		$ git clone https://github.com/MuYunyun/todoList.git
+		cd todoList
 		npm install
 		npm start
 
