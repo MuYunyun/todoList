@@ -1,26 +1,21 @@
 import React from 'react';
-import {
-	connect
-} from "react-redux";
-import {
-	addTodo
-} from "../actions";
+import { connect } from "react-redux";
+import { addTodo } from "../actions";
 
-let AddTodo = ({
-	dispatch
-}) => {
+let AddTodo = ({ dispatch }) => {
 	let input;
 	return (
 		<div>
-			<form onSubmit={e=>{
+			<form onSubmit={ e => {
 				e.preventDefault();
-				if (!input.value.trim()) {return}
+				if (!input.value.trim())
+				{ return }
 				dispatch(addTodo(input.value))
-			    input.value = ""
+			  input.value = ""
 			}}>
-				<input ref={node => {input = node}}/>
-				<button type="submit">
-					Add Todo					
+				<input placeholder="你想做点什么" ref={r => input = r} className="todo-input" />
+				<button type="submit" className="todo-btn">
+					添加任务
 				</button>
 			</form>
 		</div>

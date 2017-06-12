@@ -1,13 +1,16 @@
 import React from 'react';
 import AddTodo from "../containers/AddTodo";
 import VisibleTodoList from "../containers/VisibleTodoList";
-import Footer from './Footer';
+import Top from './Top';
+import './index.css'
 
 const App = () => (
-	<div>
-		<AddTodo />
-		<VisibleTodoList />
-		<Footer />
+	<div className="todo-box">
+		<div className="todo-innerBox">
+			<Top />
+			<VisibleTodoList />
+			<AddTodo />
+		</div>
 	</div>
 );
 

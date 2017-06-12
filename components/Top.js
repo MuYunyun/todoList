@@ -1,20 +1,18 @@
 import React from 'react';
 import FilterLink from '../containers/FilterLink';
 
-const Footer = () => (
-	<p>
+const Top = () => (
+	<div className="todo-tab">
 		<FilterLink filter="SHOW_ALL">
-			All
+			全部任务
 		</FilterLink>
-		{","}
 		<FilterLink filter="SHOW_ACTIVE">
-			Active
+			待办任务
 		</FilterLink>
-		{","}
 		<FilterLink filter="SHOW_COMPLETED">
-			Completed
+			已完成任务
 		</FilterLink>
-	</p>
+	</div>
 )
 
-export default Footer;
+export default Top;
