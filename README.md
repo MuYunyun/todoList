@@ -1,6 +1,8 @@
 # todoList
 <a href="http://MuYunyun.github.io/todoList" target="\_blank">效果展示</a>
 
+该demo已被整合到[reactSPA](https://github.com/MuYunyun/reactSPA)这个项目中，[在线展示](http://muyunyun.cn/reactSPA)。在这个项目中对redux进行了更优的优化。
+
 		$ git clone https://github.com/MuYunyun/todoList.git
 		cd todoList
 		npm install
