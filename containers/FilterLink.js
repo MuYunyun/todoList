@@ -1,9 +1,9 @@
-import React from 'react';
-import { connect } from "react-redux";
-import Link from "../components/Link";
+import React from 'react'
+import { connect } from "react-redux"
+import Link from "../components/Link"
 import { setVisibility } from "../actions"
 
-//第二个参数表示组件自身的props
+// 第二个参数表示组件自身的 props
 const mapStateToProps = (state, ownProps) => {
 	return {
 		active: ownProps.filter === state.visibilityFilter
@@ -23,4 +23,4 @@ const FilterLink = connect(
 	mapDispatchToProps
 )(Link)
 
-export default FilterLink;
+export default FilterLink

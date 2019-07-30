@@ -1,5 +1,5 @@
-import React from 'react';
-import FilterLink from '../containers/FilterLink';
+import React from 'react'
+import FilterLink from '../containers/FilterLink'
 
 const Top = () => (
 	<div className="todo-tab">
@@ -15,4 +15,4 @@ const Top = () => (
 	</div>
 )
 
-export default Top;
+export default Top

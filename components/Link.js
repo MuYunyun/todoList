@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 const Link = ({ active, children, onClick }) => {
 	return (
 		<div className="todo-tab_item">
@@ -15,4 +15,4 @@ const Link = ({ active, children, onClick }) => {
 	)
 }
 
-export default Link;
+export default Link
