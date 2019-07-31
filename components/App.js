@@ -8,8 +8,8 @@ const App = () => (
 	<div className="todo-box">
 		<div className="todo-innerBox">
 			<Top />
-			<VisibleTodoList />
-			<AddTodo />
+			{/* <VisibleTodoList />
+			<AddTodo /> */}
 		</div>
 	</div>
 );

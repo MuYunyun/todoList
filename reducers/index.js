@@ -2,7 +2,7 @@ import todos from './todos'
 import visibilityFilter from './visibilityFilter'
 import {
 	combineReducers
-} from 'redux'
+} from '../redux'
 
 const todoApp = combineReducers({
 	todos,
