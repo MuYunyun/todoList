@@ -16,8 +16,8 @@ export const useStoreContext = () => useContext(StoreContext)
 export const combineReducers = (reducers) => {
   return (state, action) => {
     const result = {}
-    Object.entries(reducers).forEach(({ key, value }) => {
-      result[key] = value(state[key], action) // 这里的 state[key] 有待考究
+    Object.entries(reducers).forEach(([storeName, reduceFunc]) => {
+      result[storeName] = reduceFunc(state[storeName], action) // 这里的 state[storeName] 有待考究
     })
 
     return result

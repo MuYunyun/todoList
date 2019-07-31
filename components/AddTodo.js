@@ -1,15 +1,17 @@
 import React from 'react'
-import { connect } from "react-redux"
 import { addTodo } from "../actions"
+import { useStoreContext } from '../redux'
 
-let AddTodo = ({ dispatch }) => {
-	let input;
+let input
+
+let AddTodo = () => {
+  const [store, dispatch] = useStoreContext()
+
 	return (
 		<div>
 			<form onSubmit={ e => {
-				e.preventDefault();
-				if (!input.value.trim())
-				{ return }
+				e.preventDefault()
+				if (!input.value.trim()) { return }
 				dispatch(addTodo(input.value))
 			  input.value = ""
 			}}>
@@ -19,8 +21,7 @@ let AddTodo = ({ dispatch }) => {
 				</button>
 			</form>
 		</div>
-	);
+	)
 }
-AddTodo = connect()(AddTodo)
 
 export default AddTodo

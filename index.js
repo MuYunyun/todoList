@@ -5,19 +5,17 @@ import App from './components/App'
 import { StoreProvider } from './redux'
 
 const FilterStore = {
-  SHOW_ALL: "show_all",
-  SHOW_ACTIVE: "SHOW_ACTIVE",
-  SHOW_COMPLETED: "SHOW_COMPLETED",
+  active: "SHOW_ALL"
 }
 
 render(
   <StoreProvider
     reducer={todoApp}
     initialState={{
-			visibilityFilter: FilterStore
+			FilterStore,
     }}
   >
     <App />
   </StoreProvider>,
   document.getElementById("root")
-);
+)
