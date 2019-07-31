@@ -1,4 +1,4 @@
-### Redux
+### How to write your own redux
 
 <a href="http://MuYunyun.github.io/todoList" target="\_blank">效果展示</a>
 
@@ -11,7 +11,7 @@ yarn
 yarn start
 ```
 
-> redux 使用见分支 []()
+> redux 使用见分支 [feature/redux](https://github.com/MuYunyun/todoList/tree/feature/redux)
 
 ### 使用 React Hooks 替代 Redux
 
