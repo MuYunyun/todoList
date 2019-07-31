@@ -11,8 +11,15 @@ yarn
 yarn start
 ```
 
-### 使用 Hooks 替代 Redux
+> redux 使用见分支 []()
+
+### 使用 React Hooks 替代 Redux
+
+在 React 16.8 版本之后, 如果`不是特别复杂`的业务场景, 可以使用 React 提供的 `useContext、useReducer` 实现自定义简化版的 redux, 可见该项目 master 分支。
+
+> 特别复杂的场景暂时不建议使用此模式, 原因见 [react-redux v7 回退到订阅的原因](https://github.com/reduxjs/react-redux/issues/1177)
 
 ### 相关链接
 
 * [redux middleware 源码分析](https://github.com/MuYunyun/blog/issues/15)
+* [如何写一个 redux](https://github.com/MuYunyun/blog/blob/master/React/%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF%E6%A0%88/Redux%E4%B8%8EMobx%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF.md)

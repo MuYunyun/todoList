@@ -1,16 +1,21 @@
 import React from 'react'
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { render } from 'react-dom'
+import todoApp from './reducers'
+import App from './components/App'
+import { StoreProvider } from './redux'
 
-import todoApp from './reducers';
-import App from './components/App';
-
-const store = createStore(todoApp);
+const FilterStore = {
+  active: "SHOW_ALL"
+}
 
 render(
-	<Provider store={store}>
-		<App />
-	</Provider >,
-	document.getElementById('root')
-);
+  <StoreProvider
+    reducer={todoApp}
+    initialState={{
+			FilterStore,
+    }}
+  >
+    <App />
+  </StoreProvider>,
+  document.getElementById("root")
+)
